@@ -226,17 +226,17 @@
    .header_left_list,
    .header_right_list {
    font-size: 10px;
-   margin-bottom: 10px;
+    margin-bottom: 10px;
  }
 
    .header_left_list::after{
       width: 20px;
-      right: 0;
+      right: 10%;
    }
 
    .header_right_list::before{
       width: 20px;
-      left: 0;
+      left: 10%;
    }
 
    .logo_descr_item img {
