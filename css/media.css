@@ -231,12 +231,12 @@
 
    .header_left_list::after{
       width: 20px;
-      right: 10%;
+      right: 0;
    }
 
    .header_right_list::before{
       width: 20px;
-      left: 10%;
+      left: 0;
    }
 
    .logo_descr_item img {
