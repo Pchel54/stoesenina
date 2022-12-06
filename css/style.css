@@ -297,7 +297,7 @@ body {
 }
 
 .footer_img{
-    background-image: url("img/card.jpg");
+    background-image: url("..img/card.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
