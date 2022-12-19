@@ -1,0 +1,405 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 10 version
+*/
+
+@media only screen and (max-width : 1000px) {
+   
+   .header_title{
+      font-size: 120px;
+   }
+
+   .descr_glass_title{
+      margin-top: 100px;
+   }
+
+   .descr_glass{
+      margin-bottom: 100px;
+   }
+
+   .completed_work{
+      margin-bottom: 100px;
+   }
+ }
+ 
+ @media only screen and (max-width : 950px) {
+   .nav_link{
+      font-size: 15px;
+   }
+
+   .contact_link{
+      font-size: 15px;
+   }
+
+   .header_title{
+      font-size: 110px;
+   }
+
+   .contact_title{
+      font-size: 40px;
+   }
+ }
+
+ @media only screen and (max-width : 850px) {
+   .study_grid{
+      margin-bottom: 70px;
+   }
+   
+   .descr_image{
+      font-size: 30px;
+   }
+
+   .gallery {
+      margin-bottom: 130px;
+   }
+
+   .gallery_grid{
+      -ms-grid-columns: (2,1fr);
+      grid-template-columns: repeat(2,1fr);
+   }
+
+   .contact_title {
+      font-size: 35px;
+  }
+
+  .contact_phone{
+   font-size: 20px;
+  }
+
+  .work_grid{
+      -ms-grid-columns: (2,1fr);
+      grid-template-columns: repeat(2,1fr);
+  }
+
+  .gray_stripe{
+   margin-bottom: 70px;
+  }
+
+  .footer_social_name{
+   font-size: 20px;
+  }
+
+  .footer_social_contact{
+   font-size: 20px;
+  }
+ }
+
+ @media only screen and (max-width : 780px) {
+   .contact_link{
+      font-size: 10px;
+   }
+
+   .header_title{
+      font-size: 100px;
+   }
+
+   .descr_image{
+      font-size: 25px;
+   }
+
+   .contact_title{
+      font-size: 27px;
+   }
+
+   .contact_phone{
+      font-size: 15px;
+   }
+
+   .descr_glass_text{
+      font-size: 15px;
+   }
+
+   .descr_glass_list{
+      font-size: 20px;
+   }
+}
+
+@media only screen and (max-width : 780px){
+   .nav_link {
+      font-size: 12px;
+   }
+
+   .header_title {
+      font-size: 85px;
+   }
+
+   .header_middle{
+      padding-bottom: 180px;
+   }
+
+   .descr_image {
+      font-size: 20px;
+   }
+
+   .study_title,
+   .descr_glass_title,
+   .descr_glass_title,
+   .work_title,
+   .footer_title{
+      font-size: 30px;
+   }
+
+   .footer_social_name {
+      font-size: 15px;
+   }
+
+   .footer_social_contact {
+      font-size: 15px;
+   }
+
+   .footer_bottom_text {
+      font-size: 15px;
+   }
+}
+
+@media only screen and (max-width : 690px){
+   .contact_link img{
+      width: 25px;
+      height: 25px;
+   }
+
+   .header_title {
+      font-size: 75px;
+   }
+
+  .header_title_descr{
+   font-size: 29px;
+   }
+
+  .header_middle {
+   padding-bottom: 130px;
+   }
+
+  .contact_title {
+   font-size: 25px;
+   }
+
+   .contact_top {
+      font-size: 15px;
+   }
+
+  .contact_bottom {
+   margin-top: -21px;
+   padding-left: 46px;
+   }
+
+  .contact_phone {
+   font-size: 12px;
+   }
+
+   .footer_social {
+      padding-bottom: 75px;
+   }
+}
+
+@media only screen and (max-width : 650px){
+  .header_top {
+    margin-bottom: 39px;
+  }
+
+   .nav_link {
+      font-size: 10px;
+   }
+
+   .header_contact_img{
+      left: -12px;
+   }
+
+   .contact_link img{
+      width: 20px;
+      height: 20px;
+   }
+
+   .header_title_descr {
+      font-size: 27px;
+   }
+
+   .header_middle {
+      padding-bottom: 90px;
+   }
+}
+
+@media only screen and (max-width : 600px){
+   .nav_link{
+      margin-right: 30px;
+   }
+
+   .header_title {
+      font-size: 70px;
+   }
+
+   .header_title_descr {
+      font-size: 25px;
+   }
+
+   .study_title,
+   .descr_glass_title,
+   .descr_glass_title,
+   .work_title,
+   .footer_title{
+      font-size: 25px;
+   }
+
+   .work_grid{
+      row-gap: 55px;
+   }
+}
+
+@media only screen and (max-width : 585px){
+   .grid_item{
+      padding-top: 20px;
+   }
+
+   .contact_phone {
+      font-size: 10px;
+   }
+
+   .descr_glass_title {
+      margin-top: 80px;
+      margin-bottom: 20px;
+   }
+
+   .descr_glass {
+      margin-bottom: 70px;
+   }
+}
+
+
+@media only screen and (max-width : 550px){
+   .nav_link {
+      margin-right: 15px;
+   }
+
+   .contact_title {
+      font-size: 20px;
+   }
+
+   .contact_top {
+      font-size: 11px;
+   }
+   .contact_bottom {
+      margin-top: -27px;
+      padding-left: 37px;
+   }
+
+   .contact_top_left {
+      margin-left: 0;
+   }
+
+   .button{
+      -webkit-transform: scale(0.6);
+          -ms-transform: scale(0.6);
+              transform: scale(0.6);
+   }
+
+   .footer_social_name {
+      font-size: 12px;
+   }
+
+   .footer_social_contact {
+      font-size: 12px;
+   }
+
+   .footer_bottom_text {
+      font-size: 12px;
+   }
+
+   .footer_social_item img{
+      -webkit-transform: scale(0.8);
+          -ms-transform: scale(0.8);
+              transform: scale(0.8);
+   }
+}
+
+@media only screen and (max-width : 505px){
+   .contact_phone{
+      position: relative;
+   }
+   
+   .contact_top_left{
+      display: block;
+      padding-left: 47px;
+   }
+
+   .contact_bottom{
+      position: absolute;
+      top: 32px;
+      left: 35px;
+      
+   }
+
+}
+
+@media only screen and (max-width : 465px){
+   .nav_link {
+      margin-right: 10px;
+   }
+
+   .header_title {
+      font-size: 65px;
+   }
+
+   .header_title_descr {
+      font-size: 20px;
+   }
+}
+
+@media only screen and (max-width : 445px){
+   .nav {
+      margin-top: 0;
+   }
+
+   .header_top{
+      display: block;
+   }
+
+   .header_contact_img {
+      left: 130px;
+   }
+
+   .study_grid{
+      -ms-grid-columns: (2,1fr);
+      grid-template-columns: repeat(2,1fr);
+   }
+
+   .study_title,
+   .descr_glass_title,
+   .descr_glass_title,
+   .work_title,
+   .footer_title{
+      font-size: 20px;
+   }
+
+   .footer_social{
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+   }
+
+   .footer_social_item{
+      min-width: 180px;
+   }
+}
+
+@media only screen and (max-width : 405px){
+   .header_contact_img {
+      display: none;
+   }
+   
+   .contact_title {
+      font-size: 15px;
+   }
+
+   .contact_phone{
+      text-align: left;
+   }
+
+   .contact_top_left {
+      padding-left: 20px;
+   }
+
+   .contact_bottom {
+      left: 8px;
+   }
+}
