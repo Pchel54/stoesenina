@@ -1,0 +1,271 @@
+@media only screen and (max-width : 1340px) {
+   .header_subtitle{
+      max-width: 550px;
+   }
+  
+ }
+
+@media only screen and (max-width : 1280px) {
+   .header_subtitle{
+      max-width: 450px;
+   }
+
+   .elipse_shadow{
+      left: 25%;
+   }
+}
+
+@media only screen and (max-width : 1220px) {
+   .nav_list{
+      margin-right: 70px;
+   }
+
+   .nav_link{
+      margin-right: 18px;
+   }
+
+   .header_descr{
+      margin: 0 auto;
+   }
+
+   .pz_img-2{
+      top: 164px;
+      left: 800px;
+   }
+
+   .pz_img-3{
+      top: 154px;
+      left: 885px;
+   }
+
+   .pz_img-7{
+      top: 685px;
+      left: 800px;
+   }
+
+   .pz_img-8{
+      top: 660px;
+      left: 900px;
+   }
+
+   .pz_img-5,
+   .pz_img-9{
+      display: none;
+   }
+
+   #ves, #rost{
+      padding-left: 110px;
+      width: 170px;
+   }
+   .item-rost{
+      left: 34.35%;
+   }
+
+}
+
+@media only screen and (max-width : 1084px) {
+   .fx-container{
+      height: 900px;
+   }
+}
+
+@media only screen and (max-width : 1050px) {
+   .pz_img-7,
+   .pz_img-8{
+      display: none;
+   }
+
+   .nav_list{
+      margin-right: 35px;
+   }
+
+   .nav_link{
+      margin-right: 10px;
+   }
+
+   .header_tel{
+      margin-right: 25px;
+   }
+
+   .header_btn {
+      margin-right: 10px;
+   }
+}
+
+@media only screen and (max-width : 1000px) {
+   .pz_img-1{
+      top: 90px;
+   }
+
+   .pz_img-2,
+   .pz_img-3,
+   .pz_img-4{
+      display: none;
+   }
+
+   .header_basket{
+      position: fixed;
+      bottom: 5%;
+      right: 5%;
+      z-index: 15;
+   }
+
+   .advantages_bg-3::after{
+      display:  none;
+   }
+   .advantages_foods-list:nth-child(4){
+      margin-top: 60px;
+   }
+}
+
+@media only screen and (max-width : 880px) {
+   .navigation{
+      padding: 17px 30px 0 30px;
+      justify-content: space-between;
+   }
+
+   .navbar{
+      display: block;
+   }
+
+   .nav{
+      display: block;
+      z-index: 100;
+      position: fixed;
+      text-align: center;
+      padding-top: 50px;
+      background: #fff;
+      width: 100%;
+      height: 100%;
+      top: 0;left: 0;bottom: 0;
+      transform: translateX(-200%);
+      transition: ease-in-out .5s;
+   }
+
+   .nav_list{
+      display: block;
+      margin: 0 0 30px 0;
+   }
+
+   .nav-avtive{
+      transform: translateX(0);
+   }
+
+   .nav_link{
+      margin: 0 0 15px 0;
+      font-size: 25px;
+      transition: ease-in-out .5s;
+   }
+   
+
+   .nav_link:hover a{
+      color: #01605A;
+      border-bottom: 3px Solid #01605A;
+   }
+
+   .header_tel, .header_btn{
+      margin: 0 0 30px 0;
+  }
+
+   .nav-krest{
+      position: absolute;
+      top: 25px;
+      right: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      background-color: #01605a;
+      border-radius: 50%;
+   }
+
+}
+
+
+@media only screen and (max-width : 749px) {
+   
+   .advantages_title{
+      font-size: 40px;
+      margin: 70px 0;
+   }
+
+   .header-social_link{
+      margin: 0 auto;
+      padding: 0;
+      width: 165px;
+   }
+
+   .social_link:first-child{
+      margin: 0;
+   }
+
+   .advantages_bg-2::after{
+      display:  none;
+   }
+
+   .advantages_bg-3::after{
+      display:  block;
+   }
+
+   .advantages_foods-list:nth-child(3){
+      margin-top: 60px;
+   }
+
+   .pz_img-6{
+      display: none;
+   }
+}
+
+@media only screen and (max-width : 600px) {
+   .header_title{
+      margin-top: 25px;
+      font-size: 65px;
+   }
+
+   .header_subtitle{
+      font-size: 30px;
+   }
+
+   .btn_prog{
+      width: 350px;
+      height: 70px;
+      padding: 15px 0;
+      font-size: 23px;
+   }
+}
+
+
+@media only screen and (max-width : 499px) {
+   .pz_img-1{
+      display: none;
+   }
+
+   .header_title{
+      font-size: 60px;
+   }
+
+   .header_subtitle{
+      font-size: 30px;
+   }
+
+   .advantages_title{
+      font-size: 30px;
+      margin: 70px 0;
+   }
+   .advantages_bg-1::after,
+   .advantages_bg-2::after,
+   .advantages_bg-3::after{
+      display:  none;
+   }
+
+   .advantages_foods-list:nth-child(1),
+   .advantages_foods-list:nth-child(2){
+      margin-top: 60px;
+   }
+
+   
+}
+
+
+
