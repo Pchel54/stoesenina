@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Proper nutrition</title>
+
+   <!-- Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@300;400;600&display=swap"
+      rel="stylesheet" />
+   <!-- /Fonts -->
+
+   <!-- Libs -->
+   <link rel="stylesheet" href="libs/swiper/swiper.min.css" />
+   <!-- Libs END -->
+
+   <link rel="stylesheet" href="css/fonts.css" />
+   <link rel="stylesheet" href="css/reset.css" />
+   <link rel="stylesheet" href="css/style.css" />
+   <link rel="stylesheet" href="css/media.css" />
+
+</head>
+
+<body>
+
+   <!-- Modal -->
+   <div class="modal modal-progg js-mod-active">
+      <div class="modal_wd1">
+         <p class="modal_title">Программа “Быстрый старт” добавлена в корзину</p>
+         <a class="modal_btn active-btn" href="cart.html">Оформить заказ</a>
+         <div class="modal-krest active-btn">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M12 12L6 6M12 12L18 18M12 12L18 6M12 12L6 18" stroke="#fff" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="2" />
+            </svg>
+         </div>
+      </div>
+      <div class="overlay"></div>
+   </div>
+
+   <div class="modal modal-form js-mod-active">
+      <div class="modal_wd2">
+         <div class="modal-result">Ваш результат</div>
+         <div class="modal-calories">1564 кКал</div>
+         <div class="modal-prog">Ваш результат</div>
+         <div class="modal-balance">Ваш результат</div>
+
+         <a class="modal_btn1 active-btn" href="#menu">Посмотреть меню</a>
+         <div class="modal-krest active-btn">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M12 12L6 6M12 12L18 18M12 12L18 6M12 12L6 18" stroke="#fff" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="2" />
+            </svg>
+         </div>
+      </div>
+      <div class="overlay"></div>
+   </div>
+   <!-- /Modal -->
+
+
+   <!-- Header -->
+
+   <header class="header">
+      <div class="container header_bg">
+         <img class="pz_absolut pz_img-1" src="Image/header/headerbg1.png" alt="food">
+         <img class="pz_absolut pz_img-2" src="Image/header/headerbg2.png" alt="food">
+         <img class="pz_absolut pz_img-3" src="Image/header/headerbg3.png" alt="food">
+         <img class="pz_absolut pz_img-4" src="Image/header/headerbg4.png" alt="food">
+         <img class="pz_absolut pz_img-5" src="Image/header/headerbg5.png" alt="food">
+         <img class="pz_absolut pz_img-6" src="Image/header/headerbg6.png" alt="food">
+         <img class="pz_absolut pz_img-7" src="Image/header/headerbg7.png" alt="food">
+         <img class="pz_absolut pz_img-8" src="Image/header/headerbg8.png" alt="food">
+         <img class="pz_absolut pz_img-9" src="Image/header/headerbg9.png" alt="colorbg">
+
+         <div class="navigation">
+            <div class="logo">
+               <a href="index.html" class="logo_link"><img class="logo-image" src="Image/header/Logo.png"
+                     alt="logo"></a>
+            </div>
+
+            <nav class="nav">
+               <ul class="nav_list">
+                  <li class="nav_link"><a href="#menu">Меню</a></li>
+                  <li class="nav_link"><a href="#perfect_menu">Заказать</a></li>
+                  <li class="nav_link"><a href="cart.html">Доставка</a></li>
+                  <li class="nav_link"><a href="#customer_reviews">Блог</a></li>
+                  <li class="nav_link"><a href="#footer_contact"> Контакты </a></li>
+                  <div class="nav-krest active-btn">
+                     <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 12L6 6M12 12L18 18M12 12L18 6M12 12L6 18" stroke="#fff" stroke-linecap="round"
+                           stroke-linejoin="round" stroke-width="2" />
+                     </svg>
+                  </div>
+               </ul>
+               <div class="header_tel">
+                  <a class="header__telItem" href="tel:+79130000000">79130000000</a>
+               </div>
+
+               <button class="header_btn active-btn" type="button">WhatsApp</button>
+            </nav>
+
+            <div class="header_basket active-btn">
+               <a href="cart.html">
+                  <svg width="38" height="33" viewBox="0 0 38 33" xmlns="http://www.w3.org/2000/svg">
+                     <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M4.33856 0.222168C6.88923 0.222168 9.14164 1.74922 9.89176 3.98704L9.97057 4.22217H33.3168C35.9379 4.22217 37.9659 6.3309 37.6407 8.71831L36.8755 14.3379C36.629 16.1478 35.0799 17.5755 33.1092 17.8089L13.7262 20.1047C13.4964 20.4222 13.2114 20.7107 12.8755 20.9573C12.0034 21.5978 12.4967 22.8888 13.6136 22.8888H33.7025C34.5048 22.8888 35.1551 23.4858 35.1551 24.2222C35.1551 24.9585 34.5048 25.5555 33.7025 25.5555H13.6136C9.75064 25.5555 8.04425 21.0902 11.0607 18.875C11.4394 18.5969 11.5946 18.1346 11.4519 17.7091L7.11516 4.77127C6.7401 3.65236 5.6139 2.88883 4.33856 2.88883H1.74684C0.944633 2.88883 0.294312 2.29188 0.294312 1.5555C0.294312 0.819122 0.944633 0.222168 1.74684 0.222168H4.33856ZM14.3406 17.3431L32.7374 15.1641C33.3943 15.0863 33.9107 14.6104 33.9929 14.0071L34.7581 8.38755C34.8665 7.59174 34.1905 6.88884 33.3168 6.88884H10.8644L14.2285 16.9249C14.2749 17.0634 14.3122 17.203 14.3406 17.3431Z"
+                        fill="white" />
+                     <path
+                        d="M9.0095 29.5555C9.0095 28.0827 10.3101 26.8888 11.9146 26.8888C13.519 26.8888 14.8196 28.0827 14.8196 29.5555C14.8196 31.0283 13.519 32.2222 11.9146 32.2222C10.3101 32.2222 9.0095 31.0283 9.0095 29.5555Z"
+                        fill="white" />
+                     <path
+                        d="M29.3449 26.8888C27.7405 26.8888 26.4399 28.0827 26.4399 29.5555C26.4399 31.0283 27.7405 32.2222 29.3449 32.2222C30.9494 32.2222 32.25 31.0283 32.25 29.5555C32.25 28.0827 30.9494 26.8888 29.3449 26.8888Z"
+                        fill="white" />
+                  </svg>
+                  <span class="basket_goods">1</span>
+               </a>
+            </div>
+
+            <button type="button" class="navbar" aria-label="open menu">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+            </button>
+
+         </div>
+
+         <div class="header_descr">
+            <h1 class="header_title">Надоело считать калории?</h1>
+            <p class="header_subtitle">Правильное питание-это просто, вкусно и&nbsp;доступно!
+               Выбери свое меню на&nbsp;завтра</p>
+            <a href="#my_form" class="btn_prog active-btn">Выбрать программу</a>
+         </div>
+         <div class="header-social_link">
+            <a href="/" class="social_link active-btn">
+               <svg fill="#000000" width="35" height="30" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                     d="M3 248c0-38 26-53 58-55l149 1c9 0 17 6 20 15 34 110 76 178 126 255 3 6 8 9 13 9 4 0 8-2 11-7l3-11 1-173c0-25-12-29-40-33-11-2-18-12-18-22 0-2 0-4 1-6 14-43 58-65 120-65l56-1c46 0 88 20 88 79v227c4 3 8 5 13 5 8 0 18-5 26-18 52-73 111-160 119-206 0-2 1-3 2-5 11-22 39-37 51-41 2-1 5-2 9-2h155l10 1c15 0 26 10 31 19 9 14 7 29 8 35v7c-15 91-119 193-163 259-6 8-9 15-9 22 0 6 3 12 8 18l146 184c8 11 12 24 12 35 0 33-31 52-61 55l-17 1H779c-3 0-5 1-8 1-17 0-31-9-41-19-32-39-63-79-94-118-6-8-8-9-14-13-7 29-13 59-20 89l-3 17c-5 18-18 37-42 42l-14 1h-98C272 830 117 584 8 277c-3-8-5-19-5-29zm601 259c-26 0-55-15-55-43V234c0-27-12-37-45-37l-57 2c-32 0-50 5-65 15 23 11 44 26 44 68v176c-3 35-32 58-60 58-19 0-36-11-46-29-45-68-83-132-116-224l-9-26-133-1c-18 0-16 1-16 10 0 6 1 14 2 19l21 56c109 282 246 467 376 467h100c14 0 13-17 16-27l19-88c4-9 7-17 14-24 8-8 17-11 26-11 19 0 37 15 49 29l85 108c7 11 13 13 17 13h165c16 0 30-5 30-15 0-3-1-7-3-10L818 582c-12-15-17-30-17-45 0-16 6-32 16-46 42-63 132-153 153-227l3-13c-1-5-1-9-2-14H814c-10 4-18 10-24 18l-6 19c-23 64-86 152-131 213-15 14-32 20-49 20z" />
+               </svg>
+            </a>
+            <a href="/" class="social_link active-btn">
+               <svg width="35" height="30" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" stroke-width="3"
+                  stroke="#000000" fill="none">
+                  <path
+                     d="M26.67,38.57l-.82,11.54A2.88,2.88,0,0,0,28.14,49l5.5-5.26,11.42,8.35c2.08,1.17,3.55.56,4.12-1.92l7.49-35.12h0c.66-3.09-1.08-4.33-3.16-3.55l-44,16.85C6.47,29.55,6.54,31.23,9,32l11.26,3.5L45.59,20.71c1.23-.83,2.36-.37,1.44.44Z"
+                     stroke-linecap="round" />
+               </svg>
+            </a>
+            <a href="/" class="social_link active-btn">
+               <svg width="35" height="30" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" stroke-width="3"
+                  stroke="#000000" fill="none">
+                  <path
+                     d="M37.49,19.86c0-.07.36-.3,1.51-.3h3.76A2.21,2.21,0,0,0,45,17.34h0V10.78a2.22,2.22,0,0,0-2.19-2.26h-5.6a11.47,11.47,0,0,0-8.43,3.28,12,12,0,0,0-3.19,8.64v5.95H21.24A2.23,2.23,0,0,0,19,28.61v7.07a2.21,2.21,0,0,0,2.21,2.21h4.28V53.24a2.22,2.22,0,0,0,2.18,2.25h7.35a2.21,2.21,0,0,0,2.21-2.22h0V37.94h5.23a2.23,2.23,0,0,0,2.22-2.22V28.64a2.21,2.21,0,0,0-2.22-2.21H37.26V21.22A2.44,2.44,0,0,1,37.49,19.86Z"
+                     stroke-linecap="round" />
+               </svg>
+            </a>
+         </div>
+      </div>
+   </header>
+
+   <!-- /Header -->
+
+   <!-- Main -->
+
+   <main>
+      <!-- Avantages -->
+
+      <section class="advantages">
+         <div class="container">
+            <h2 class="advantages_title">Преимущества</h2>
+            <div class="advantages_foods">
+               <div class="advantages_foods-list">
+                  <span class="advantages_number">01</span>
+                  <div class="advantages_bg-1 advantages_bg"></div>
+                  <p class="advantages_text">Здоровое питание для всей семьи.
+                     Вкусно. Здорво. Недорого!</p>
+               </div>
+
+               <div class="advantages_foods-list">
+                  <span class="advantages_number">02</span>
+                  <div class="advantages_bg-2 advantages_bg">
+                     <img class="image_item1" src="Image/main/advantages/bg2_1.png" alt="vegetable">
+                     <img class="image_item2" src="Image/main/advantages/bg2_2.png" alt="vegetable">
+                     <img class="image_item3" src="Image/main/advantages/bg2_3.png" alt="vegetable">
+                     <img class="image_item4" src="Image/main/advantages/bg2_5.png" alt="vegetable">
+                     <img class="image_item5" src="Image/main/advantages/bg2_4.png" alt="vegetable">
+                     <img class="image_item6" src="Image/main/advantages/bg2_6.png" alt="vegetable">
+                     <img class="image_item7" src="Image/main/advantages/bg2_7.png" alt="vegetable">
+                     <img class="image_item8" src="Image/main/advantages/bg2_8.png" alt="vegetable">
+                     <img class="image_item9" src="Image/main/advantages/bg2_9.png" alt="vegetable">
+                  </div>
+                  <p class="advantages_text">150 неповторяющихся блюд.
+                     Расчёт КБЖУ.</p>
+               </div>
+
+               <div class="advantages_foods-list">
+                  <span class="advantages_number">03</span>
+                  <div class="advantages_bg-3 advantages_bg"></div>
+                  <p class="advantages_text">Низкокалорийные десерты в&nbsp;каждой программе</p>
+               </div>
+
+               <div class="advantages_foods-list">
+                  <span class="advantages_number">04</span>
+                  <div class="advantages_bg-4 advantages_bg"></div>
+                  <p class="advantages_text">Упаковка, сохраняющая полезные свойства и&nbsp;внешний вид продуктов</p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- /Avantages -->
+
+      <!-- Section - Menu -->
+
+      <section id="menu">
+         <div class="container">
+            <h2 class="menu_title">Меню</h2>
+            <div class="menu_pluses">
+
+               <img class="menu_bg1" src="image/main/menu/menu_bg1.png" alt="vegetable">
+               <img class="menu_bg2" src="image/main/menu/menu_bg2.png" alt="vegetable">
+               <img class="menu_bg3" src="image/main/menu/menu_bg3.png" alt="vegetable">
+               <img class="menu_bg4" src="image/main/menu/menu_bg4.png" alt="vegetable">
+               <img class="menu_bg5" src="image/main/menu/menu_bg5.png" alt="vegetable">
+               <img class="menu_bg6" src="image/main/menu/menu_bg6.png" alt="vegetable">
+               <img class="menu_bg7" src="image/main/menu/menu_bg7.png" alt="vegetable">
+               <img class="menu_bg9" src="image/main/menu/menu_bg10.png" alt="vegetable">
+               <div class="ellipce_bg"></div>
+
+               <div class="slider_flex">
+                  <div class="slider_trumbs">
+                     <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                           <div class="swiper-slide">
+                              <div class="menu_item">
+                                 <div class="title-menu">Быстрый результат</div>
+                                 <div class="subtitle-menu">Безопасная и&nbsp;эффективная программа питания для
+                                    похудения, исключающая диеты и&nbsp;тренировки. Правильное распределение приемов
+                                    пищи и&nbsp;КБЖУ
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide">
+                              <div class="menu_item">
+                                 <div class="title-menu">Ежедневный баланс</div>
+                                 <div class="subtitle-menu">Программа для поддержания красоты и&nbsp;здоровья. Формирует
+                                    навыки здорового питания, подходит для всех членов семьи
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide">
+                              <div class="menu_item">
+                                 <div class="title-menu">На спорте</div>
+                                 <div class="subtitle-menu">Комплексная программа питания для людей, активно
+                                    занимающихся спортом или фитнесом. Направлена
+                                    на&nbsp;поддержание и/или набор мышечной массы.
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide">
+                              <div class="menu_item">
+                                 <div class="title-menu">Атлетам</div>
+                                 <div class="subtitle-menu">Правильный рацион для качественного роста мышечной массы.
+                                    Cлужит для поддержания спортсменов в&nbsp;момент интенсивных тренировок или перед
+                                    подготовкой к&nbsp;соревнованиям.
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+
+                  <div class="slider_images">
+                     <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                           <div class="swiper-slide">
+                              <div class="menu_foods_descr">
+                                 <div class="title_descr_foods">Быстрый результат</div>
+                                 <div class="subtitle_descr_foods">Безопасная и эффективная программа питания
+                                    для похудения, исключающая диеты и тренировки. Правильное распределение приемов пищи
+                                    и КБЖУ
+                                 </div>
+                                 <div class="slider_img"><img class="menu_bg8" src="image/main/menu/menu_bg8.png"
+                                       alt="vegetable">
+                                    <div class="elipse_shadow"></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide">
+
+                              <div class="menu_foods_descr">
+                                 <div class="title_descr_foods">Ежедневный баланс</div>
+                                 <div class="subtitle_descr_foods">Программа для поддержания красоты и здоровья.
+                                    Формирует навыки здорового питания, подходит для всех членов семьи
+                                 </div>
+                                 <div class="slider_img"><img class="menu_bg8" src="image/main/menu/menu_bg8.png"
+                                       alt="vegetable">
+                                    <div class="elipse_shadow"></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide">
+                              <div class="menu_foods_descr">
+                                 <div class="title_descr_foods">На спорте</div>
+                                 <div class="subtitle_descr_foods">Комплексная программа питания для людей, активно
+                                    занимающихся спортом или фитнесом. Направлена
+                                    на поддержание и/или набор мышечной массы.
+                                 </div>
+                                 <div class="slider_img"><img class="menu_bg8" src="image/main/menu/menu_bg8.png"
+                                       alt="vegetable">
+                                    <div class="elipse_shadow"></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide">
+                              <div class="menu_foods_descr">
+                                 <div class="title_descr_foods">Атлетам</div>
+                                 <div class="subtitle_descr_foods">Правильный рацион для качественного роста мышечной
+                                    массы. Cлужит для поддержания спортсменов в момент интенсивных тренировок или перед
+                                    подготовкой к соревнованиям.
+                                 </div>
+                                 <div class="slider_img"><img class="menu_bg8" src="image/main/menu/menu_bg8.png"
+                                       alt="vegetable">
+                                    <div class="elipse_shadow"></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <button class="menu_btn_next active-btn"></button>
+            </div>
+         </div>
+      </section>
+
+      <!-- /Section - Menu -->
+
+      <!-- Section - perfect_menu  -->
+
+      <section id="perfect_menu">
+         <div class="container fx-container">
+            <div class="pm_left">
+               <h3 class="pm_left-title">Подобрать идеальное меню под твой стиль жизни и&nbsp;твои предпочтения</h3>
+            </div>
+            <div class="pm_right">
+               <div class="pm_bg">
+                  <div class="pm_right_title">Выбрать количество приемов</div>
+                  <div class="pm_reception">
+                     <ul class="pm_menu_number">
+                        <li class="menu_number-item">5 приемов</li>
+                        <li class="menu_number-item">3 приема</li>
+                     </ul>
+                  </div>
+
+                  <div class="pm_right_title2">Количество дней</div>
+                  <p class="pm_subtitle">Выбрать количество дней для оформления заказа</p>
+                  <div class="number_of">
+                     <ul class="day_menu-list">
+                        <li class="mune_list_item">2 дня</li>
+                        <li class="mune_list_item">3 дня</li>
+                        <li class="mune_list_item">5 дней</li>
+                        <li class="mune_list_item">7 дней</li>
+                     </ul>
+                  </div>
+                  <div class="menu_itog">
+                     <p class="menu_itog-day">
+                        Итог
+                        <span class="total-day">3 дня</span>
+                     </p>
+                     <p class="menu_itog-money">
+                        <span class="order-price">6300</span>
+                        <span class="ruble">
+                           <img src="/Image/main/perfect_menu/ruble.png" alt="ruble">
+                        </span>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- /Section - perfect_menu  -->
+
+      <!-- Section - Menu_week -->
+
+      <section id="menu_week">
+         <div class="container">
+            <h3 class="week_menu">Примерное меню на неделю</h3>
+
+            <div class="weekday">
+               <div class="weekday-slider">
+                  <div class="swiper-container">
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                           <div class="week_day-item">
+                              <div class="weekday_number">
+                                 <p class="weekday_text">пн </p>
+                                 <p class="weekday_text_number">26.12</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="week_day-item">
+                              <div class="weekday_number">
+                                 <p class="weekday_text">вт </p>
+                                 <p class="weekday_text_number">27.12</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="week_day-item">
+                              <div class="weekday_number">
+                                 <p class="weekday_text">ср </p>
+                                 <p class="weekday_text_number">28.12</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="week_day-item">
+                              <div class="weekday_number">
+                                 <p class="weekday_text">чт </p>
+                                 <p class="weekday_text_number">29.12</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="week_day-item">
+                              <div class="weekday_number">
+                                 <p class="weekday_text">пт </p>
+                                 <p class="weekday_text_number">30.12</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="week_day-item">
+                              <div class="weekday_number">
+                                 <p class="weekday_text">сб </p>
+                                 <p class="weekday_text_number">31.12</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="week_day-item">
+                              <div class="weekday_number">
+                                 <p class="weekday_text">вс </p>
+                                 <p class="weekday_text_number">01.01</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="week_day-item">
+                              <div class="weekday_number">
+                                 <p class="weekday_text">вс </p>
+                                 <p class="weekday_text_number">02.01</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="week_day-item">
+                              <div class="weekday_number">
+                                 <p class="weekday_text">вс </p>
+                                 <p class="weekday_text_number">03.01</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <span class="weekday_line"></span>
+            </div>
+
+            <div class="week-slider-menu">
+               <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide">
+                        <div class="menu-group">
+                           <div class="menu-foods">
+                              <div class="wm_day">
+                                 <img class="week_img_ab" src="Image/main/week_day/day1.png" alt="food">
+                                 <h4 class="day_title">Завтрак</h4>
+                                 <p class="day_descr">описание блюда
+                                    340/550 ккал</p>
+                              </div>
+                           </div>
+                           <div class="menu-foods">
+                              <div class="wm_day">
+                                 <img class="week_img_ab" src="Image/main/week_day/day2.png" alt="food">
+                                 <h4 class="day_title">2 завтрак</h4>
+                                 <p class="day_descr">описание блюда
+                                    340/550 ккал</p>
+                              </div>
+                           </div>
+                           <div class="menu-foods">
+                              <div class="wm_day">
+                                 <img class="week_img_ab" src="Image/main/week_day/day3.png" alt="food">
+                                 <h4 class="day_title">Обед</h4>
+                                 <p class="day_descr">описание блюда
+                                    340/550 ккал</p>
+                              </div>
+                           </div>
+                           <div class="menu-foods">
+                              <div class="wm_day">
+                                 <img class="week_img_ab" src="Image/main/week_day/day4.png" alt="food">
+                                 <h4 class="day_title">Полдник</h4>
+                                 <p class="day_descr">описание блюда
+                                    340/550 ккал</p>
+                              </div>
+                           </div>
+                           <div class="menu-foods">
+                              <div class="wm_day">
+                                 <img class="week_img_ab" src="Image/main/week_day/day5.png" alt="food">
+                                 <h4 class="day_title">Ужин</h4>
+                                 <p class="day_descr">описание блюда
+                                    340/550 ккал</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="swiper-slide">
+                        <div class="menu-group">
+                           <div class="menu-foods">
+                              <div class="wm_day">
+                                 <img class="week_img_ab" src="Image/main/week_day/day1.png" alt="food">
+                                 <h4 class="day_title">Завтрак</h4>
+                                 <p class="day_descr">описание блюда
+                                    340/550 ккал</p>
+                              </div>
+                           </div>
+                           <div class="menu-foods">
+                              <div class="wm_day">
+                                 <img class="week_img_ab" src="Image/main/week_day/day2.png" alt="food">
+                                 <h4 class="day_title">2 завтрак</h4>
+                                 <p class="day_descr">описание блюда
+                                    340/550 ккал</p>
+                              </div>
+                           </div>
+                           <div class="menu-foods">
+                              <div class="wm_day">
+                                 <img class="week_img_ab" src="Image/main/week_day/day3.png" alt="food">
+                                 <h4 class="day_title">Обед</h4>
+                                 <p class="day_descr">описание блюда
+                                    340/550 ккал</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="btn_center">
+                  <button class="basket_btn active-btn" type="button">Добавить в корзину</button>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Section - Menu_week -->
+
+      <!-- Section - My form -->
+
+      <section id="my_form">
+         <div class="container">
+            <h2 class="form_title">Моя форма</h2>
+            <div class="сalculator_slim">
+               <img class="сalculator_men" src="Image/main/my_form/men.png" alt="men">
+               <img class="сalculator_women" src="Image/main/my_form/women.png" alt="women">
+               <h3 class="calculator_title cl_title1">Калькулятор стройности</h3>
+               <h3 class="calculator_title cl_title2">Активность</h3>
+               <h3 class="calculator_title cl_title3">Цель</h3>
+               <div class="сalculator_circle"></div>
+               <span class="calculator_line"></span>
+
+               <form method="post" id="calculator" novalidate>
+                  <ul class="gender-list">
+                     <li class="gender-item men-bg svg_gender-active">
+                        <input type="radio" name="gemder" value="MEN">
+                        <svg fill="#000" height="50" width="30" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                           xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" xml:space="preserve">
+                           <g>
+                              <circle cx="129" cy="43.7" r="19.2" />
+                              <path d="M185.6,1.5c-4.6,0-8.4,3.8-8.4,8.4v34.9l-18.7,18.7c-2.8,2.8-6.6,4.2-10.3,4.2H129h0h-19.2c-3.7,0-7.5-1.4-10.3-4.2
+                                 L80.8,44.8V9.9c0-4.6-3.8-8.4-8.4-8.4c-4.6,0-8.4,3.8-8.4,8.4v38.4c0,2.4,1,4.5,2.6,6l36,36v1.3v64.8v86.4c0,6.6,5.4,12,12,12
+                                 s12-5.4,12-12v-84c0-1.3,1.1-2.4,2.4-2.4s2.4,1.1,2.4,2.4v84c0,6.6,5.4,12,12,12s12-5.4,12-12v-86.4h0V90.4l36-36
+                                 c1.6-1.5,2.6-3.7,2.6-6V9.9C194,5.3,190.2,1.5,185.6,1.5z" />
+                           </g>
+                        </svg>
+                        мужчина
+                     </li>
+                     <li class="gender-item woman-bg">
+                        <input type="radio" name="gemder" value="WOOMEN">
+                        <svg fill="#000" height="50" width="30" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                           xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-63 65 128 128" xml:space="preserve">
+                           <path d="M11.3,89.8c7.2,0,12.4,5.9,13.4,9.2l8.8,29c1.8,6.2-6.2,8.8-8.1,2.7l-8-26.6H13l13.3,47.3H13.6v36.9c0,6.3-9.5,6.3-9.5,0
+                                    v-37.2h-4.8v37.1c0,6.4-9.5,6.4-9.5,0v-36.8h-12.7l13.2-47.3h-4.4l-7.9,26.7c-1.9,5.8-9.9,3.4-8.1-2.8l8.8-29
+                                    c0.9-3.3,5.1-9.2,12.4-9.2C-8.9,89.8,11.3,89.8,11.3,89.8z" />
+                           <path
+                              d="M1.7,87.6C7.4,87.6,12,83,12,77.3C12,71.6,7.4,67,1.7,67C-4,67-8.5,71.6-8.5,77.3C-8.5,83-4,87.6,1.7,87.6" />
+                        </svg>
+                        женщина
+                     </li>
+                  </ul>
+
+                  <div class="item-rost">
+                     <label for="rost">Рост, см</label>
+                     <input type="text" id="rost" name="WEIGHT">
+                  </div>
+
+                  <div class="item-ves">
+                     <label for="ves">Вес, кг</label>
+                     <input type="text" id="ves" name="HEIGHT">
+                  </div>
+
+
+
+                  <ul class="cel-fitness">
+                     <li class="cacl-li point-bg1">
+                        <input type="radio" name="ACTIVE" value="ACTIVE_SIT">
+                        <span class="text-calc_pz1">Много сижу</span>
+                     </li>
+                     <li class="cacl-li point-bg2">
+                        <input type="radio" name="ACTIVE" value="ACTIVE_WALK">
+                        <span class="text-calc_pz2">Иногда гуляю</span>
+                     </li>
+                     <li class="cacl-li point-bg3">
+                        <input type="radio" name="ACTIVE" value="ACTIVE_GUM">
+                        <span class="text-calc_pz3">Хожу в зал и ем булки</span>
+                     </li>
+                     <li class="cacl-li point-bg4">
+                        <input type="radio" name="ACTIVE" value="ACTIVE_SUPERMEN">
+                        <span class="text-calc_pz4">Я спортсмен</span>
+                     </li>
+                  </ul>
+
+                  <ul class="cel-people">
+                     <li class="cacl-li point-bg5">
+                        <input type="radio" name="TARGET" value="TARGET_NO_COOK">
+                        <span class="text-calc_pz5">Не готовить</span>
+                     </li>
+                     <li class="cacl-li point-bg6">
+                        <input type="radio" name="TARGET" value="TARGET_FIT">
+                        <span class="text-calc_pz6">Похудеть</span>
+                     </li>
+                     <li class="cacl-li point-bg7">
+                        <input type="radio" name="TARGET" value="TARGET_FOOD_GOOD">
+                        <span class="text-calc_pz7">Вкусно поесть</span>
+                     </li>
+                     <li class="cacl-li point-bg8">
+                        <input type="radio" name="TARGET" value="TARGET_WEIGHT">
+                        <span class="text-calc_pz8">Набрать вес</span>
+                     </li>
+                  </ul>
+                  <button class="calc-btn active-btn model-open" type="button">Узнать результат</button>
+               </form>
+            </div>
+         </div>
+      </section>
+
+      <!-- /Section - My form -->
+
+      <!-- Section - My company -->
+
+      <section class="company">
+         <div class="container ta_center">
+            <h2 class="company_title">О компании</h2>
+            <div class="company_descr">
+               <p class="company_descr_text">FoodPot&nbsp;&mdash; это доставка готовых, здоровых, разнообразных рационов
+                  питания. С
+                  доставкой еды на&nbsp;неделю для всей семьи вы&nbsp;можете забыть о&nbsp;походах в&nbsp;магазин,
+                  подсчете калорий, готовке
+                  и&nbsp;даже мытье посуды. Мы&nbsp;экономим не&nbsp;только ваше время, но&nbsp;и&nbsp;средства, ведь,
+                  поход в&nbsp;магазин&nbsp;&mdash; это
+                  всегда лишние и&nbsp;ненужные траты на&nbsp;бесполезные продукты. Наш полноценный рацион обойдётся вам
+                  гораздо
+                  дешевле, чем перекусы на&nbsp;ходу вредной едой.</p>
+               <p class="company_descr_text">
+                  Мы&nbsp;пришли к&nbsp;вам на&nbsp;помощь, и&nbsp;составили меню, которым будет довольна вся семья,
+                  чтобы вы&nbsp;могли
+                  заказывать еду на&nbsp;дни и&nbsp;месяцы вперёд, питаться правильной, вкусной едой, не&nbsp;заботясь
+                  о&nbsp;готовке!
+                  Каждый заказ&nbsp;&mdash; это свежие блюда, приготовленные с&nbsp;использованием выверенных
+                  технологий, сохраняющих
+                  ценность каждого ингредиента</p>
+               <p class="company_descr_text">
+                  Как воспитать культуру правильного питания у&nbsp;всей семьи? Всё просто, вкусно и&nbsp;совсем
+                  недорого!
+                  Выбирайте вариант рациона и&nbsp;оформляйте заявку онлайн!</p>
+
+               <img class="bg_company_img1" src="Image/main/company/bg_company1.png" alt="foods">
+               <img class="bg_company_img2" src="Image/main/company/bg_company2.png" alt="foods">
+               <img class="bg_company_img3" src="Image/main/company/bg_company3.png" alt="foods">
+               <img class="bg_company_img4" src="Image/main/company/bg_company4.png" alt="foods">
+               <img class="bg_company_img5" src="Image/main/company/bg_company5.png" alt="foods">
+               <img class="bg_company_img6" src="Image/main/company/bg_company6.png" alt="foods">
+               <img class="bg_company_img7" src="Image/main/company/bg_company7.png" alt="foods">
+               <img class="bg_company_img8" src="Image/main/company/bg_company8.png" alt="foods">
+               <img class="bg_company_img9" src="Image/main/company/bg_company9.png" alt="foods">
+               <img class="bg_company_img10" src="Image/main/company/bg_company10.png" alt="foods">
+               <img class="bg_company_img11" src="Image/main/company/bg_company11.png" alt="foods">
+               <img class="bg_company_img12" src="Image/main/company/bg_company12.png" alt="foods">
+            </div>
+         </div>
+      </section>
+
+      <!-- Section - My company -->
+
+      <!-- Section - Customer_reviews -->
+      <section id="customer_reviews">
+         <div class="container">
+            <h2 class="customer_reviews_title">Отзывы клиентов</h2>
+            <p class="customer_reviews_descr">Наши клиенты с&nbsp;удовольствием оставляют отзыв о&nbsp;нашей работе,
+               потому что
+               они остаются довольными и&nbsp;сытыми благодаря нам. Тут можно написать что то&nbsp;еще.</p>
+            <div class="swiper_revies_item">
+               <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide">
+                        <div class="slide_card">
+                           <div class="card_reviews">
+                              <div class="image_pz card_image1"></div>
+                              <p class="social_reviews">2 GIS</p>
+                              <time class="time_reviews" datetime="2022-10-12">12 октября 2022</time>
+                           </div>
+                           <p class="reviews_card_descr">тттттстялсяыомдывповпчлпл папчлапсдал чвлтплатидлсаи
+                              алсадлоасдлис
+                              сдлсжадпадпвадлп
+                              лавпдлтвчлдпчвлдтии вптвчплятмямтвм вч мчвопалтич чмрядлтвч аоиаитччм ччлваоыжалдям
+                              апвдапчдмячлатвлптвп влповчжаджвп вопрзащарвэвпвта ыеркнщкего ыоарыаыуао</p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="slide_card">
+                           <div class="card_reviews">
+                              <div class="image_pz card_image2"></div>
+                              <p class="social_reviews">2 GIS</p>
+                              <time class="time_reviews" datetime="2022-11-04">4 ноября 2022</time>
+                           </div>
+                           <p class="reviews_card_descr">тттттстялсяыомдывповпчлпл папчлапсдал чвлтплатидлсаи
+                              алсадлоасдлис
+                              сдлсжадпадпвадлп
+                              лавпдлтвчлдпчвлдтии вптвчплятмямтвм вч мчвопалтич чмрядлтвч аоиаитччм ччлваоыжалдям
+                              апвдапчдмячлатвлптвп влповчжаджвп вопрзащарвэвпвта ыеркнщкего ыоарыаыуао</p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="slide_card">
+                           <div class="card_reviews">
+                              <div class="image_pz card_image3"></div>
+                              <p class="social_reviews">2 GIS</p>
+                              <time class="time_reviews" datetime="2022-11-16">16 ноября 2022</time>
+                           </div>
+                           <p class="reviews_card_descr">тттттстялсяыомдывповпчлпл папчлапсдал чвлтплатидлсаи
+                              алсадлоасдлис
+                              сдлсжадпадпвадлп
+                              лавпдлтвчлдпчвлдтии вптвчплятмямтвм вч мчвопалтич чмрядлтвч аоиаитччм ччлваоыжалдям
+                              апвдапчдмячлатвлптвп влповчжаджвп вопрзащарвэвпвта ыеркнщкего ыоарыаыуао</p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="slide_card">
+                           <div class="card_reviews">
+                              <div class="image_pz card_image3"></div>
+                              <p class="social_reviews">2 GIS</p>
+                              <time class="time_reviews" datetime="2022-11-16">16 ноября 2022</time>
+                           </div>
+                           <p class="reviews_card_descr">тттттстялсяыомдывповпчлпл папчлапсдал чвлтплатидлсаи
+                              алсадлоасдлис
+                              сдлсжадпадпвадлп
+                              лавпдлтвчлдпчвлдтии вптвчплятмямтвм вч мчвопалтич чмрядлтвч аоиаитччм ччлваоыжалдям
+                              апвдапчдмячлатвлптвп влповчжаджвп вопрзащарвэвпвта ыеркнщкего ыоарыаыуао</p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="slide_card">
+                           <div class="card_reviews">
+                              <div class="image_pz card_image3"></div>
+                              <p class="social_reviews">2 GIS</p>
+                              <time class="time_reviews" datetime="2022-11-16">16 ноября 2022</time>
+                           </div>
+                           <p class="reviews_card_descr">тттттстялсяыомдывповпчлпл папчлапсдал чвлтплатидлсаи
+                              алсадлоасдлис
+                              сдлсжадпадпвадлп
+                              лавпдлтвчлдпчвлдтии вптвчплятмямтвм вч мчвопалтич чмрядлтвч аоиаитччм ччлваоыжалдям
+                              апвдапчдмячлатвлптвп влповчжаджвп вопрзащарвэвпвта ыеркнщкего ыоарыаыуао</p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="slide_card">
+                           <div class="card_reviews">
+                              <div class="image_pz card_image2"></div>
+                              <p class="social_reviews">2 GIS</p>
+                              <time class="time_reviews" datetime="2022-11-16">16 ноября 2022</time>
+                           </div>
+                           <p class="reviews_card_descr">тттттстялсяыомдывповпчлпл папчлапсдал чвлтплатидлсаи
+                              алсадлоасдлис
+                              сдлсжадпадпвадлп
+                              лавпдлтвчлдпчвлдтии вптвчплятмямтвм вч мчвопалтич чмрядлтвч аоиаитччм ччлваоыжалдям
+                              апвдапчдмячлатвлптвп влповчжаджвп вопрзащарвэвпвта ыеркнщкего ыоарыаыуао</p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="slide_card">
+                           <div class="card_reviews">
+                              <div class="image_pz card_image1"></div>
+                              <p class="social_reviews">2 GIS</p>
+                              <time class="time_reviews" datetime="2022-10-12">12 октября 2022</time>
+                           </div>
+                           <p class="reviews_card_descr">тттттстялсяыомдывповпчлпл папчлапсдал чвлтплатидлсаи
+                              алсадлоасдлис
+                              сдлсжадпадпвадлп
+                              лавпдлтвчлдпчвлдтии вптвчплятмямтвм вч мчвопалтич чмрядлтвч аоиаитччм ччлваоыжалдям
+                              апвдапчдмячлатвлптвп влповчжаджвп вопрзащарвэвпвта ыеркнщкего ыоарыаыуао</p>
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+               <div class="pag_group">
+                  <div class="swiper-pagination"></div>
+                  <button class="sw-button-prev active-btn"></button>
+                  <button class="sw-button-next active-btn"></button>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- /Section - Customer_reviews -->
+
+      <!-- /Menu -->
+
+   </main>
+   <!-- /Main -->
+
+   <!-- Footer -->
+   <footer id="footer">
+
+      <div class="container footer_container">
+
+         <div id="footer_contact">
+            <img class="footer_food_bg1" src="Image/footer/footer_bg1.png" alt="foods">
+            <img class="footer_food_bg2" src="Image/footer/footer_bg2.png" alt="foods">
+            <img class="footer_food_bg3" src="Image/footer/footer_bg3.png" alt="foods">
+            <img class="footer_food_bg4" src="Image/footer/footer_bg4.png" alt="foods">
+            <img class="footer_food_bg5" src="Image/footer/footer_bg5.png" alt="foods">
+            <img class="footer_food_bg6" src="Image/footer/footer_bg6.png" alt="foods">
+            <img class="footer_food_bg7" src="Image/footer/footer_bg7.png" alt="foods">
+
+            <div class="footer_contact_title">Контакты</div>
+
+            <div class="contact_group">
+               <div class="contact_group1">
+                  <p class="footer_contact_descr">Телефон</p>
+                  <a class="footer_tel" href="tel:+79130000000">+7 913 000 00 00</a>
+               </div>
+               <div class="contact_group2">
+                  <p class="footer_contact_descr">Email</p>
+                  <a class="footer_mail" href="mailto:1new@yandex.ru">1new@yandex.ru</a>
+               </div>
+            </div>
+
+            <p class="footer_contact_descr">Адрес</p>
+            <address class="address"><a class="address_link" target="_blank"
+                  href="https://www.google.ru/maps/place/%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D1%8B%D0%B9+%D0%BF%D1%80-%D1%82.,+14%2F1/@55.0194781,82.9230988,18z/data=!4m6!3m5!1s0x42dfe67842489623:0xf9574ab8d5149c3c!4b1!8m2!3d55.0196184!4d82.9237917">
+                  г. Новоибирск, <br>ул. Красный проспект 14, 1</a></address>
+            <p class="footer_politic">Политика обработки персональных данных</p>
+            <div class="footer_form">
+               <form class="order_food" method="post">
+                  <H6 class="order_food_title">Заказать обратный звонок</H6>
+                  <p class="order_food_descr">введите номер телефона, на&nbsp;который мы&nbsp;перезвоним и&nbsp;все
+                     расскажем</p>
+                  <input class="footer_int_name" type="name" placeholder="Ваше имя" required maxlength="25">
+                  <input class="footer_int_tel" type="phone" placeholder="Телефон" required maxlength="17">
+                  <button class="footer_btn active-btn" type="submit">Перезвони мне</button>
+                  <p class="footer_confed">Нажимая кнопку &laquo;Перезвоните мне&raquo;, вы&nbsp;соглашаетесь
+                     с&nbsp;<b>условиями оферты</b> и
+                     нашей <b>политикой конфиденциальности</b>.</p>
+               </form>
+            </div>
+         </div>
+      </div>
+
+   </footer>
+   <!-- /Footer -->
+
+   <script src="libs/swiper/swiper.min.js"></script>
+   <script src="JS/main.js"></script>
+
+</body>
+
+</html>
