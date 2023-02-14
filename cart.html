@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>BascetFood</title>
+
+   <!-- Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@300;400;600&display=swap"
+      rel="stylesheet">
+   <!-- /Fonts -->
+
+   <!-- Libs -->
+   <link rel="stylesheet" href="libs/swiper/swiper.min.css" />
+   <!-- Libs END -->
+
+   <link rel="stylesheet" href="css/fonts.css" />
+   <link rel="stylesheet" href="css/reset.css" />
+   <link rel="stylesheet" href="css/style.css" />
+   <link rel="stylesheet" href="css/cart.css" />
+   <link rel="stylesheet" href="css/media.css" />
+</head>
+
+<body>
+   <div class="content">
+      <!-- Header -->
+      <header class="header">
+         <div class="container header_bg">
+            <div class="navigation">
+               <div class="logo">
+                  <a href="index.html" class="logo_link"><img class="logo-image" src="image/header/Logo.png"
+                        alt="logo"></a>
+               </div>
+
+               <nav class="nav">
+                  <ul class="nav_list">
+                     <li class="nav_link"><a href="index.html#menu">Меню</a></li>
+                     <li class="nav_link"><a href="index.html#perfect_menu">Заказать</a></li>
+                     <li class="nav_link"><a href="cart.html">Доставка</a></li>
+                     <li class="nav_link"><a href="index.html#customer_reviews">Блог</a></li>
+                     <li class="nav_link"><a href="#footer_contact"> Контакты </a></li>
+                     <div class="nav-krest active-btn">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M12 12L6 6M12 12L18 18M12 12L18 6M12 12L6 18" stroke="#fff" stroke-linecap="round"
+                              stroke-linejoin="round" stroke-width="2" />
+                        </svg>
+                     </div>
+                  </ul>
+                  <div class="header_tel">
+                     <a class="header__telItem" href="tel:+79130000000">79130000000</a>
+                  </div>
+
+                  <button class="header_btn active-btn" type="button">WhatsApp</button>
+               </nav>
+
+               <div class="header_basket active-btn">
+                  <a href="cart.html">
+                     <svg width="38" height="33" viewBox="0 0 38 33" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                           d="M4.33856 0.222168C6.88923 0.222168 9.14164 1.74922 9.89176 3.98704L9.97057 4.22217H33.3168C35.9379 4.22217 37.9659 6.3309 37.6407 8.71831L36.8755 14.3379C36.629 16.1478 35.0799 17.5755 33.1092 17.8089L13.7262 20.1047C13.4964 20.4222 13.2114 20.7107 12.8755 20.9573C12.0034 21.5978 12.4967 22.8888 13.6136 22.8888H33.7025C34.5048 22.8888 35.1551 23.4858 35.1551 24.2222C35.1551 24.9585 34.5048 25.5555 33.7025 25.5555H13.6136C9.75064 25.5555 8.04425 21.0902 11.0607 18.875C11.4394 18.5969 11.5946 18.1346 11.4519 17.7091L7.11516 4.77127C6.7401 3.65236 5.6139 2.88883 4.33856 2.88883H1.74684C0.944633 2.88883 0.294312 2.29188 0.294312 1.5555C0.294312 0.819122 0.944633 0.222168 1.74684 0.222168H4.33856ZM14.3406 17.3431L32.7374 15.1641C33.3943 15.0863 33.9107 14.6104 33.9929 14.0071L34.7581 8.38755C34.8665 7.59174 34.1905 6.88884 33.3168 6.88884H10.8644L14.2285 16.9249C14.2749 17.0634 14.3122 17.203 14.3406 17.3431Z"
+                           fill="white" />
+                        <path
+                           d="M9.0095 29.5555C9.0095 28.0827 10.3101 26.8888 11.9146 26.8888C13.519 26.8888 14.8196 28.0827 14.8196 29.5555C14.8196 31.0283 13.519 32.2222 11.9146 32.2222C10.3101 32.2222 9.0095 31.0283 9.0095 29.5555Z"
+                           fill="white" />
+                        <path
+                           d="M29.3449 26.8888C27.7405 26.8888 26.4399 28.0827 26.4399 29.5555C26.4399 31.0283 27.7405 32.2222 29.3449 32.2222C30.9494 32.2222 32.25 31.0283 32.25 29.5555C32.25 28.0827 30.9494 26.8888 29.3449 26.8888Z"
+                           fill="white" />
+                     </svg>
+                     <span class="basket_goods">1</span>
+                  </a>
+               </div>
+
+               <button type="button" class="navbar" aria-label="open menu">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+               </button>
+            </div>
+         </div>
+      </header>
+      <!-- /Header -->
+
+      <!-- Main -->
+      <main class="main ">
+         <!-- Thank you for the order -->
+         <div class="container thank-people js-mod-active">
+            <div class="title1 t-media">Спасибо за Ваш заказ</div>
+            <div class="subtitle1">В ближайшее время с вами свяжется оператор, а пока вы можете подписаться на наши
+               социалные сети. Там мы рассказываем про здоровое питание.</div>
+            <div class="social_link-bascet fx-wrap">
+               <div class="social-link-vk">
+                  <a href="#">
+                     <svg fill="none" width="45" height="45" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M3 248c0-38 26-53 58-55l149 1c9 0 17 6 20 15 34 110 76 178 126 255 3 6 8 9 13 9 4 0 8-2 11-7l3-11 1-173c0-25-12-29-40-33-11-2-18-12-18-22 0-2 0-4 1-6 14-43 58-65 120-65l56-1c46 0 88 20 88 79v227c4 3 8 5 13 5 8 0 18-5 26-18 52-73 111-160 119-206 0-2 1-3 2-5 11-22 39-37 51-41 2-1 5-2 9-2h155l10 1c15 0 26 10 31 19 9 14 7 29 8 35v7c-15 91-119 193-163 259-6 8-9 15-9 22 0 6 3 12 8 18l146 184c8 11 12 24 12 35 0 33-31 52-61 55l-17 1H779c-3 0-5 1-8 1-17 0-31-9-41-19-32-39-63-79-94-118-6-8-8-9-14-13-7 29-13 59-20 89l-3 17c-5 18-18 37-42 42l-14 1h-98C272 830 117 584 8 277c-3-8-5-19-5-29zm601 259c-26 0-55-15-55-43V234c0-27-12-37-45-37l-57 2c-32 0-50 5-65 15 23 11 44 26 44 68v176c-3 35-32 58-60 58-19 0-36-11-46-29-45-68-83-132-116-224l-9-26-133-1c-18 0-16 1-16 10 0 6 1 14 2 19l21 56c109 282 246 467 376 467h100c14 0 13-17 16-27l19-88c4-9 7-17 14-24 8-8 17-11 26-11 19 0 37 15 49 29l85 108c7 11 13 13 17 13h165c16 0 30-5 30-15 0-3-1-7-3-10L818 582c-12-15-17-30-17-45 0-16 6-32 16-46 42-63 132-153 153-227l3-13c-1-5-1-9-2-14H814c-10 4-18 10-24 18l-6 19c-23 64-86 152-131 213-15 14-32 20-49 20z"
+                           fill="#01605A" />
+                     </svg>
+                  </a>
+               </div>
+               <div class="social-link-inst">
+                  <a href="#">
+                     <svg width="50" height="50" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M32.75 25.5C32.75 27.0575 32.2955 28.5801 31.4439 29.8751C30.5923 31.1702 29.3819 32.1795 27.9658 32.7756C26.5497 33.3716 24.9914 33.5275 23.4881 33.2237C21.9847 32.9198 20.6038 32.1698 19.5199 31.0685C18.4361 29.9671 17.6979 28.5639 17.3989 27.0363C17.0999 25.5087 17.2534 23.9253 17.8399 22.4864C18.4265 21.0474 19.4199 19.8175 20.6943 18.9522C21.9688 18.0869 23.4672 17.625 25 17.625C27.0535 17.6315 29.021 18.4633 30.473 19.9387C31.925 21.4141 32.7436 23.4134 32.75 25.5ZM49.2188 14.6719V36.3281C49.2188 39.9831 47.7898 43.4885 45.2464 46.0729C42.7029 48.6574 39.2533 50.1094 35.6562 50.1094H14.3438C10.7468 50.1094 7.29708 48.6574 4.75361 46.0729C2.21015 43.4885 0.78125 39.9831 0.78125 36.3281V14.6719C0.78125 11.0169 2.21015 7.51155 4.75361 4.92706C7.29708 2.34257 10.7468 0.890625 14.3438 0.890625H35.6562C39.2533 0.890625 42.7029 2.34257 45.2464 4.92706C47.7898 7.51155 49.2188 11.0169 49.2188 14.6719ZM36.625 25.5C36.625 23.1637 35.9432 20.8799 34.6658 18.9373C33.3885 16.9948 31.5729 15.4807 29.4487 14.5867C27.3245 13.6926 24.9871 13.4587 22.7321 13.9145C20.477 14.3703 18.4057 15.4953 16.7799 17.1473C15.1541 18.7993 14.0469 20.9041 13.5984 23.1955C13.1498 25.4869 13.38 27.862 14.2599 30.0204C15.1398 32.1789 16.6298 34.0238 18.5415 35.3217C20.4532 36.6197 22.7008 37.3125 25 37.3125C28.0831 37.3125 31.04 36.068 33.2201 33.8527C35.4002 31.6374 36.625 28.6329 36.625 25.5ZM40.5 12.7031C40.5 12.1191 40.3296 11.5481 40.0102 11.0625C39.6909 10.5768 39.237 10.1983 38.7059 9.97479C38.1749 9.75128 37.5905 9.6928 37.0268 9.80674C36.463 9.92069 35.9452 10.2019 35.5387 10.615C35.1323 11.028 34.8555 11.5541 34.7433 12.127C34.6312 12.6998 34.6888 13.2936 34.9087 13.8332C35.1287 14.3729 35.5012 14.8341 35.9791 15.1586C36.4571 15.4831 37.0189 15.6562 37.5938 15.6562C38.3645 15.6562 39.1037 15.3451 39.6488 14.7913C40.1938 14.2375 40.5 13.4863 40.5 12.7031Z"
+                           fill="#01605A" />
+                     </svg>
+                  </a>
+               </div>
+            </div>
+            <div class="see-people">Будем рады вас видеть!</div>
+         </div>
+         <!-- .Thank you for the order -->
+
+         <div class="container cont-form-order">
+            <!-- Making an order-->
+            <div class="title2">Оформление заказа</div>
+            <div class="bascet-root">
+               <!-- Food Program -->
+               <div class="pr-bascet">
+                  <div class="pr-title">Быстрый результат</div>
+                  <div class="pr-subtitle">Безопасная и эффективная программа питания
+                     для похудения, исключающая диеты и тренировки. Правильное распределение приемов пищи и КБЖУ
+                  </div>
+                  <div class="pr-image">
+                     <img src="image/image_card/food.png" alt="foods">
+                  </div>
+               </div>
+               <!-- /Food Program -->
+
+               <!-- Food options -->
+               <div class="pr-col">
+                  <div class="namber-foods">
+                     <div class="number-foods-top">
+                        <span class="text1">Количество приемов</span>
+                        <span class="number1">5</span>
+                        <div class="foods-top-col">
+                           1 шт
+                           <span class="arrow-top">
+                              <svg fill="#000000" width="20" height="10" viewBox="0 0 1920 1920"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="m.153 1393.854 92.168 92.299 867.767-867.636 867.636 867.636 92.429-92.299L960.088 433.92z"
+                                    fill-rule="evenodd" />
+                              </svg>
+                           </span>
+                           <span class="arrow-bottom">
+                              <svg fill="#000000" width="20" height="10" viewBox="0 0 1920 1920"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="m.153 1393.854 92.168 92.299 867.767-867.636 867.636 867.636 92.429-92.299L960.088 433.92z"
+                                    fill-rule="evenodd" />
+                              </svg>
+                           </span>
+                        </div>
+                     </div>
+                     <div class="number-foods-bottom">
+                        <span class="text1">Количество дней</span>
+                        <span class="number1">2</span>
+                        <span class="ruble-1">3600
+                           <svg width="19" height="26" viewBox="0 0 19 26" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M11.7619 16.2631C13.6816 16.2631 15.5226 15.443 16.88 13.9833C18.2374 12.5235 19 10.5436 19 8.47921C19 6.41479 18.2374 4.43493 16.88 2.97516C15.5226 1.5154 13.6816 0.695313 11.7619 0.695312H4.97619C4.61625 0.695312 4.27106 0.849079 4.01655 1.12278C3.76203 1.39649 3.61905 1.76771 3.61905 2.15479V13.3441H1.35714C0.997206 13.3441 0.652011 13.4979 0.397498 13.7716C0.142984 14.0453 0 14.4165 0 14.8036C0 15.1907 0.142984 15.5619 0.397498 15.8356C0.652011 16.1093 0.997206 16.2631 1.35714 16.2631H3.61905V18.2091H1.35714C0.997206 18.2091 0.652011 18.3628 0.397498 18.6365C0.142984 18.9103 0 19.2815 0 19.6686C0 20.0556 0.142984 20.4269 0.397498 20.7006C0.652011 20.9743 0.997206 21.128 1.35714 21.128H3.61905V23.5605C3.61905 23.9476 3.76203 24.3188 4.01655 24.5925C4.27106 24.8662 4.61625 25.02 4.97619 25.02C5.33613 25.02 5.68132 24.8662 5.93584 24.5925C6.19035 24.3188 6.33333 23.9476 6.33333 23.5605V21.128H11.3095C11.6695 21.128 12.0147 20.9743 12.2692 20.7006C12.5237 20.4269 12.6667 20.0556 12.6667 19.6686C12.6667 19.2815 12.5237 18.9103 12.2692 18.6365C12.0147 18.3628 11.6695 18.2091 11.3095 18.2091H6.33333V16.2631H11.7619ZM6.33333 3.61427H11.7619C12.9617 3.61427 14.1123 4.12683 14.9607 5.03918C15.8091 5.95153 16.2857 7.18895 16.2857 8.47921C16.2857 9.76947 15.8091 11.0069 14.9607 11.9192C14.1123 12.8316 12.9617 13.3441 11.7619 13.3441H6.33333V3.61427Z"
+                                 fill="black" />
+                           </svg>
+                        </span>
+                     </div>
+                  </div>
+                  <!-- /Food options -->
+
+                  <!-- Promo code -->
+                  <div class="pro-code">
+                     <input class="pro-code-int" type="text" placeholder="Есть промо-код?">
+                     <span class="pro-code-text active-btn">
+                        <svg width="64" height="39" viewBox="0 0 64 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M37.7542 37.7426C36.9459 37.051 36.5579 36.2152 36.5902 35.2353C36.6253 34.2555 37.047 33.4197 37.8553 32.7281L49.273 22.9583H4.20841C3.06328 22.9583 2.10271 22.6263 1.32671 21.9623C0.553401 21.3006 0.166748 20.4798 0.166748 19.4999C0.166748 18.5201 0.553401 17.6981 1.32671 17.0341C2.10271 16.3724 3.06328 16.0416 4.20841 16.0416H49.273L37.7542 6.18535C36.9459 5.49368 36.5417 4.67175 36.5417 3.71956C36.5417 2.76967 36.9459 1.94889 37.7542 1.25723C38.5626 0.565559 39.5231 0.219727 40.636 0.219727C41.7461 0.219727 42.7053 0.565559 43.5136 1.25723L62.0042 17.0791C62.4084 17.4249 62.6954 17.7996 62.8651 18.2031C63.0322 18.6065 63.1157 19.0388 63.1157 19.4999C63.1157 19.961 63.0322 20.3933 62.8651 20.7968C62.6954 21.2003 62.4084 21.5749 62.0042 21.9208L43.4126 37.8291C42.6716 38.4631 41.7461 38.7801 40.636 38.7801C39.5231 38.7801 38.5626 38.4343 37.7542 37.7426Z"
+                              fill="black" />
+                        </svg>
+                     </span>
+                  </div>
+                  <!-- /Promo code -->
+               </div>
+            </div>
+            <!-- /Making an order-->
+
+            <!-- Making delivery-->
+            <form class="form-account" method="post">
+               <!-- Delivery-accout -->
+               <div class="title2 mr-title-ac">Адрес и дата доставки</div>
+               <div class="delivery-accout fx-wrap">
+                  <div class="del-col">
+                     <label for="STREET">Улица</label>
+                     <input class="int-text1" type="text" name="STREET" placeholder="Фрунзе">
+                  </div>
+                  <div class="del-col  fx-wrap">
+                     <div class="date-delivery">
+                        <label for="DATEDEL">Дата доставки</label>
+                        <input class="int-text3" type="text" name="DELIVERY_DATE" placeholder="23.01.2023">
+                     </div>
+                     <div class="time-delivery">
+                        <label for="DELIVERY_TIME">Время доставки</label>
+                        <select class="select-time int-text4" name="DELIVERY_TIME">
+                           <option value="TIME_10-12">C 10:00 ДО 12:00</option>
+                           <option value="TIME_10-12">C 12:00 ДО 14:00</option>
+                           <option value="TIME_10-12">C 14:00 ДО 16:00</option>
+                           <option value="TIME_10-12">C 16:00 ДО 18:00</option>
+                           <option value="TIME_10-12">C 18:00 ДО 20:00</option>
+                        </select>
+                        <span class="select-arrow">
+                           <svg fill="#000000" width="20" height="10" viewBox="0 0 1920 1920"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="m.153 1393.854 92.168 92.299 867.767-867.636 867.636 867.636 92.429-92.299L960.088 433.92z"
+                                 fill-rule="evenodd" />
+                           </svg>
+                        </span>
+                     </div>
+                  </div>
+
+                  <div class="del-col fx-wrap">
+                     <div class="del-dom">
+                        <label for="HOUSE">Дом</label>
+                        <input class="int-text2" type="text" name="HOUSE" placeholder="5">
+                     </div>
+                     <div class="del-korp">
+                        <label for="KORP">Корпус</label>
+                        <input class="int-text2" type="text" name="KORP" placeholder="5">
+                     </div>
+                     <div class="del-ent">
+                        <label for="ENTRANCE">Подъезд</label>
+                        <input class="int-text2" type="text" name="ENTRANCE" placeholder="1">
+                     </div>
+                     <div class="del-office">
+                        <label for="OFFICE">Кв/офис</label>
+                        <input class="int-text2" type="text" name="OFFICE" placeholder="152">
+                     </div>
+                     <div class="del-floor">
+                        <label for="FLOOR">Этаж</label>
+                        <input class="int-text2" type="text" name="FLOOR" placeholder="5">
+                     </div>
+                  </div>
+                  <div class="del-col ">
+                     <label for="ORDER_DESCRIPTION">Комментарий</label>
+                     <textarea class="int-text5" name="ORDER_DESCRIPTION"></textarea>
+                  </div>
+               </div>
+               <!-- /Delivery-accout -->
+
+               <!-- Delivery-base people -->
+               <div class="title2 mr-title-data">Ваши данные</div>
+               <div class="delivery-base fx-wrap">
+                  <div class="del-col">
+                     <div class="famili-acount">
+                        <label for="SURNAME_CLIENT">Фамилия</label>
+                        <input class="int-text1" type="text" name="SURNAME_CLIENT" placeholder="Иванова">
+                     </div>
+                     <div class="name-acount">
+                        <label for="NAME_CLIENT">Имя</label>
+                        <input class="int-text1" type="text" name="NAME_CLIENT" placeholder="Ксения">
+                     </div>
+                  </div>
+                  <div class="del-col">
+                     <div class="tel-number">
+                        <label for="PHONE">Номер телефона</label>
+                        <input class="int-text6" type="tel" name="PHONE" placeholder="+ 7 913 256 25 22">
+                     </div>
+                     <div class="name-acount">
+                        <label for="PHONE_CLIENT">Email</label>
+                        <input class="int-text6" type="text" name="NAME_CLIENT" placeholder="ksusha@yandex.ru">
+                     </div>
+                  </div>
+               </div>
+               <!-- /Delivery-base people -->
+
+               <!-- Payment -->
+               <div class="title2 mr-title-pay">Оплатить</div>
+               <div class="payment-col">
+                  <label for="PAYMENT">Выберите способ оплаты</label>
+                  <ul>
+                     <li class="pay-btn">
+                        <input type="radio" name="PAYMENT_ID" value="10">
+                        Наличными курьеру
+                     </li>
+                     <li class="pay-btn">
+                        <input type="radio" name="PAYMENT_ID" value="10">
+                        Оплатить online
+                     </li>
+                     <li class="pay-btn">
+                        <input type="radio" name="PAYMENT_ID" value="10">
+                        Оплатить через терминал
+                     </li>
+                  </ul>
+               </div>
+               <div class="title2 mr-title-order">Итог</div>
+               <div class="subtitle2">Проверьте, что Ваши данные указаны верно. </div>
+               <div class="order_price">
+                  Итого к оплате
+                  <span id="total-order-price"><b>3600</b>
+                     <svg width="19" height="26" viewBox="0 0 19 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M11.7619 16.2631C13.6816 16.2631 15.5226 15.443 16.88 13.9833C18.2374 12.5235 19 10.5436 19 8.47921C19 6.41479 18.2374 4.43493 16.88 2.97516C15.5226 1.5154 13.6816 0.695313 11.7619 0.695312H4.97619C4.61625 0.695312 4.27106 0.849079 4.01655 1.12278C3.76203 1.39649 3.61905 1.76771 3.61905 2.15479V13.3441H1.35714C0.997206 13.3441 0.652011 13.4979 0.397498 13.7716C0.142984 14.0453 0 14.4165 0 14.8036C0 15.1907 0.142984 15.5619 0.397498 15.8356C0.652011 16.1093 0.997206 16.2631 1.35714 16.2631H3.61905V18.2091H1.35714C0.997206 18.2091 0.652011 18.3628 0.397498 18.6365C0.142984 18.9103 0 19.2815 0 19.6686C0 20.0556 0.142984 20.4269 0.397498 20.7006C0.652011 20.9743 0.997206 21.128 1.35714 21.128H3.61905V23.5605C3.61905 23.9476 3.76203 24.3188 4.01655 24.5925C4.27106 24.8662 4.61625 25.02 4.97619 25.02C5.33613 25.02 5.68132 24.8662 5.93584 24.5925C6.19035 24.3188 6.33333 23.9476 6.33333 23.5605V21.128H11.3095C11.6695 21.128 12.0147 20.9743 12.2692 20.7006C12.5237 20.4269 12.6667 20.0556 12.6667 19.6686C12.6667 19.2815 12.5237 18.9103 12.2692 18.6365C12.0147 18.3628 11.6695 18.2091 11.3095 18.2091H6.33333V16.2631H11.7619ZM6.33333 3.61427H11.7619C12.9617 3.61427 14.1123 4.12683 14.9607 5.03918C15.8091 5.95153 16.2857 7.18895 16.2857 8.47921C16.2857 9.76947 15.8091 11.0069 14.9607 11.9192C14.1123 12.8316 12.9617 13.3441 11.7619 13.3441H6.33333V3.61427Z"
+                           fill="black" />
+                     </svg>
+                  </span>
+               </div>
+               <button type="submit" class="btn-save active-btn">Заказать</button>
+               <div class="oferta">Нажимая на кнопку “Заказать” вы соглашаетесь <b>с условиями политики обработки
+                     персональных
+                     данных.</b></div>
+               <!-- /Payment -->
+            </form>
+            <!-- /Making delivery-->
+         </div>
+
+      </main>
+      <!-- /Main -->
+
+      <!-- Footer -->
+      <footer id="footer">
+         <div class="container">
+            <div id="footer_contact">
+               <img class="footer_food_bg1" src="image/footer/footer_bg1.png" alt="foods">
+               <img class="footer_food_bg2" src="image/footer/footer_bg2.png" alt="foods">
+               <img class="footer_food_bg3" src="image/footer/footer_bg3.png" alt="foods">
+               <img class="footer_food_bg4" src="image/footer/footer_bg4.png" alt="foods">
+
+               <div class="footer_contact_title">Контакты</div>
+
+               <div class="contact_group">
+                  <div class="contact_group1">
+                     <p class="footer_contact_descr">Телефон</p>
+                     <a class="footer_tel" href="tel:+79130000000">+7 913 000 00 00</a>
+                  </div>
+                  <div class="contact_group2">
+                     <p class="footer_contact_descr">Email</p>
+                     <a class="footer_mail" href="mailto:1new@yandex.ru">1new@yandex.ru</a>
+                  </div>
+               </div>
+
+               <p class="footer_contact_descr">Адрес</p>
+               <address class="address"><a class="address_link" target="_blank"
+                     href="https://www.google.ru/maps/place/%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D1%8B%D0%B9+%D0%BF%D1%80-%D1%82.,+14%2F1/@55.0194781,82.9230988,18z/data=!4m6!3m5!1s0x42dfe67842489623:0xf9574ab8d5149c3c!4b1!8m2!3d55.0196184!4d82.9237917">
+                     г. Новоибирск, <br>ул. Красный проспект 14, 1</a></address>
+               <p class="footer_politic">Политика обработки персональных данных</p>
+            </div>
+         </div>
+      </footer>
+      <!-- /Footer -->
+   </div>
+   <script src="js/main.js"></script>
+   <script src="js/main_cart.js"></script>
+</body>
+
+</html>
