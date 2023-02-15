@@ -1,0 +1,483 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 10 version
+*/
+
+body{
+   position: relative;
+   font-family: 'Raleway', sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 23px;
+   color: #000;
+   background: #fff;
+}
+
+.navigation{
+   padding-top: 30px;
+}
+
+input[type="radio"]{
+   display: none;
+}
+
+.fx-wrap{
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -ms-flex-wrap: wrap;
+       flex-wrap: wrap;
+}
+
+.js-mod-active{
+   display: none;
+}
+
+/* ----/Main class---- */
+
+/* -----Thank you for the order----- */
+
+.title1{
+   margin: 185px 0 40px ;
+   font-weight: 600;
+   font-size: 33px;
+   line-height: 39px;
+   text-align: center;
+}
+
+.subtitle1{
+   margin: 0 auto 80px auto;
+   text-align: center;
+   max-width: 931px;
+   font-size: 23px;
+}
+
+.social_link-bascet{
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   margin-bottom: 40px;
+}
+.social-link-vk,
+.social-link-inst{
+   width: 50px;
+   height: 50px;
+}
+
+.social-link-vk{
+   margin-right: 60px;
+}
+
+.see-people{
+   margin-bottom: 574px;
+   text-align: center;
+   font-weight: 600;
+   font-size: 23px;
+   line-height: 27px;
+}
+/* ----.Thank you for the order----- */
+
+/* ----Making an order----- */
+.cont-form-order{
+   max-width: 1150px;
+   margin: 0 auto 214px auto;
+}
+
+.title2{
+   margin: 90px 0 74px 0;
+   font-weight: 600;
+   font-size: 33px;
+   line-height: 39px;
+   text-align: center;
+}
+
+/* ----Food Program---- */
+.bascet-root{
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -ms-flex-wrap: nowrap;
+       flex-wrap: nowrap;
+}
+
+.pr-bascet{
+   width: 500px;
+   height: auto;
+}
+
+.pr-title{
+   margin: 0 0 26px 32px;
+   font-weight: 600;
+   font-size: 30px;
+   line-height: 35px;
+   text-align: left;
+}
+
+.pr-subtitle{
+   margin: 0 0 29px 32px;
+   max-width: 345px;
+   font-size: 13px;
+   line-height: 15px; 
+}
+
+.pr-image{
+   position: relative;
+   margin: 45px 0 0 15px;
+}
+
+.pr-image::after{
+   content: "";
+   position: absolute;
+   top: 100px;
+   left: 130px;
+   width: 100px;
+   height: 30px;
+   border-radius: 50%;
+   background: rgba(255, 136, 35, 0.85);
+   -webkit-box-shadow: 0 0 250px 90px rgba(255, 136, 35, 0.85);
+           box-shadow: 0 0 250px 90px rgba(255, 136, 35, 0.85);
+   z-index: -1;
+}
+/* ----/Food Program---- */
+
+/* ----Food options---- */
+.pr-col{
+   margin: 0 0 0 auto;
+   width: 631px;
+}
+
+.namber-foods{
+   margin: 0 0 74px auto;
+   padding: 15px 0;
+   width: 100%;
+   height: 147px;
+   border: 2px solid #D9D9D9;
+   border-radius: 10px
+}
+
+.number-foods-top,
+.number-foods-bottom{
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   height: 50%;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+}
+
+.text1{
+   margin-left: 35px;
+   margin-right: 30px;
+   width: 240px;
+   font-weight: 600;
+   font-size: 23px;
+   line-height: 27px;
+}
+
+.number1{
+   margin-right: 110px;
+   width: 45px;
+   height: 45px;
+   font-size: 30px;
+   line-height: 35px;
+   border: 1px solid #01605A;
+   border-radius: 50%;
+   text-align: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+}
+
+.foods-top-col{
+   position: relative;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   -webkit-box-pack: left;
+       -ms-flex-pack: left;
+           justify-content: left;
+   padding-left: 10px;
+   width: 85px;
+   height: 35px;
+   font-size: 18px;
+   line-height: 21px;
+   border: 1px solid #D9D9D9;
+   border-radius: 5px;
+}
+
+.arrow-top,
+.arrow-bottom{
+   position: absolute;
+   top: -2px;
+   right: 9px;
+   width: 20px;
+   height: 10px;
+   
+}
+
+.arrow-bottom{
+   rotate: 180deg;
+   top: auto;
+   bottom: -2px;
+}
+
+.ruble-1{
+   position: relative;
+   font-weight: 600;
+   font-size: 33px;
+   line-height: 40px;
+} 
+
+.ruble-1 svg{
+   position: absolute;
+   right: -30px;
+   bottom: 1px;
+}
+
+.pro-code{
+   position: relative;
+}
+
+.pro-code-int{
+   padding: 0 140px 0 50px;
+   width: 100%;
+   height: 83px;
+   font-size: 23px;
+   line-height: 28px;
+   color: #808080;
+   border: 2px solid #D9D9D9;
+   border-radius: 10px;
+}
+
+.pro-code-text{
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   width: 135px;
+   height: 83px;
+   background: #FF8823;
+   border-radius: 0px 10px 10px 0px;
+}
+/* ----Food options---- */
+
+/* ----/Making an order----- */
+
+
+/* ----Making delivery---- */
+.form-account label{
+   display: block;
+   margin: 0 0 13px 22px;
+}
+
+.form-account input{
+   margin-bottom: 32px;
+   padding: 0 22px;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   color: #808080;
+   border: 2px solid #D9D9D9;
+   background: #F5F5F5;
+   border-radius: 10px;
+}
+
+.delivery-accout{
+   -webkit-box-pack: justify;
+       -ms-flex-pack: justify;
+           justify-content: space-between;
+}
+
+/* ----Margin-title---- */
+.mr-title-ac{
+   margin: 80px 0 55px 0;
+}
+
+.mr-title-data{
+   margin: 50px 0 35px 0;
+}
+
+.mr-title-pay{
+   margin: 85px 0 25px 0;
+}
+
+.mr-title-order{
+   margin: 90px 0 60px 0;
+}
+/* ----/Margin-title---- */
+
+.del-col{
+   width: 460px;
+}
+
+.del-col div {
+   max-height: 100px;
+}
+
+/* ----Input style---- */
+.int-text1{
+   width: 460px;
+   height: 53px;
+   border-radius: 10px;
+}
+
+.int-text2{
+   margin: 0 20px 0 0;
+   width: 95px;
+   height: 53px;
+   border-radius: 10px;
+}
+
+.int-text3{
+   width: 180px;
+   height: 53px;
+}   
+
+.int-text4{
+   width: 220px;
+   height: 53px;
+   padding: 0 22px;
+   color: #808080;
+   background: #F5F5F5;
+   border: 2px solid #D9D9D9;
+   border-radius: 10px
+}
+
+.int-text5{
+   width: 433px;
+   height: 174px;
+   padding: 22px;
+   background: #F5F5F5;
+   border: 2px solid #D9D9D9;
+   border-radius: 10px;
+   outline: none;
+   resize: none;
+}
+
+.int-text6{
+   width: 325px;
+   height: 53px;
+}
+/* ----/Input style---- */
+
+.date-delivery{
+   margin-right: 35px;
+}
+
+.time-delivery{
+   position: relative;
+}
+
+.select-arrow{
+   position: absolute;
+   top: 67%;
+   right: 10px;   
+   rotate: 180deg;
+   width: 20px;
+   height: 10px;
+   pointer-events: none;
+}
+
+.delivery-base{
+   -webkit-box-pack: justify;
+       -ms-flex-pack: justify;
+           justify-content: space-between;
+}
+
+/* -----Payment----- */
+.payment-col label{
+   margin-bottom: 47px;
+   text-align: center;
+   font-weight: 400;
+   font-size: 23px;
+   line-height: 27px;
+}
+
+.payment-col ul{
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex; 
+   -ms-flex-wrap: wrap; 
+       flex-wrap: wrap;
+   -webkit-box-pack: justify;
+       -ms-flex-pack: justify;
+           justify-content: space-between;
+}
+
+.pay-btn{
+   width: 325px;
+   height: 53px;
+   padding: 15px 0;
+   background: #D9D9D9;
+   border: 2px solid #D9D9D9;
+   border-radius: 10px;
+   text-align: center;
+   cursor: pointer;
+}
+
+.pay-btn-active{
+   background: #FF8823;
+}
+
+.subtitle2{
+   margin-bottom: 47px;
+   font-size: 23px;
+   line-height: 27px;
+   text-align: center;
+}
+
+.order_price{
+   margin-bottom: 47px;
+   font-size: 30px;
+   line-height: 35px;
+   text-align: center;
+}
+
+.btn-save{
+   display: block;
+   width: 368px;
+   height: 80px;
+   margin: 0 auto 19px auto;
+   font-size: 33px;
+   line-height: 39px;
+   color: #FFFFFF;
+   background: #01605A;
+   border: 2px solid #01605A;
+   border-radius: 10px;
+}
+
+.oferta{
+   font-size: 15px;
+   line-height: 18px;
+   text-align: center;
+}
+
+.oferta b{
+   color: #197771;
+}
+/* ----- /Payment----- */
+
+/* ----/Making delivery---- */
+
+/* Footer */
+.footer_container{
+   padding-bottom: 100px;
+}
+/* /Footer */
+
+
